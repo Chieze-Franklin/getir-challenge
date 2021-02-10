@@ -9,7 +9,7 @@ Codebase for the Getir code challenge.
 - `npm run start:dev` for development
 - `npm start` for production
 
-This starts the API server on `http://localhost:3000`.
+This starts the API server on [http://localhost:3000]`.
 
 # Documentation
 
