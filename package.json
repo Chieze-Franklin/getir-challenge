@@ -1,0 +1,29 @@
+{
+  "name": "getir-challenge",
+  "version": "0.0.1",
+  "description": "Technical challenge for getir",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "start:dev": "nodemon src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chieze-Franklin/getir-challenge.git"
+  },
+  "author": "Franklin Chieze",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Chieze-Franklin/getir-challenge/issues"
+  },
+  "homepage": "https://github.com/Chieze-Franklin/getir-challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
