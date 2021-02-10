@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index",
     "start:dev": "nodemon src/index",
-    "test": "exit 0"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
     "mongoose": "^5.11.15"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   }
 }
