@@ -5,6 +5,8 @@ Codebase for the Getir code challenge.
 # Quick Start
 
 - `npm i`
-- `docker-compose up`
+- Set the env variable `MONGODB_URL` to the appropriate connection string
+- `npm run start:dev` for development
+- `npm start` for production
 
-This starts the monodb database, then starts the API server on `http://localhost:3000` with proper connection to the database.
+This starts the API server on `http://localhost:3000`.
