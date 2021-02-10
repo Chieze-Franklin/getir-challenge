@@ -11,6 +11,10 @@ Codebase for the Getir code challenge.
 
 This starts the API server on [http://localhost:3000](http://localhost:3000).
 
+# Testing
+
+- `npm test`
+
 # Documentation
 
 The production API is located at [https://getir-test-api.herokuapp.com/](https://getir-test-api.herokuapp.com/).
