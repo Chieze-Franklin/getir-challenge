@@ -1,4 +1,5 @@
 let router = require('express').Router();
+var controllers = require('./controllers');
 
 // use the root route to give info on how to use the API
 router.get('/', function (req, res) {
@@ -14,5 +15,8 @@ router.get('/', function (req, res) {
             '"maxCount": Records with “totalCOunt” less than or equal to this value will be returned.'
     });
 });
+
+// the POST endpoint
+router.post('/', controllers.findRecords);
 
 module.exports = router;
