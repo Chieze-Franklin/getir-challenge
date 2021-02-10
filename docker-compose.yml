@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword # to connect using mongo shell: mongo admin -u root -p rootpassword
+    volumes:
+      - mongodb_data_container:/data/db
+    ports:
+      - 27017:27017
+
+  api:
+    build:
+      context: ./
+    command: 
+      - /bin/bash
+      - -c
+      - |
+        ./node_modules/.bin/nodemon src/index.js
+    depends_on:
+      - mongodb_container
+    env_file:
+      - env/local.env
+    volumes:
+      - ./src:/home/node/app/src
+      - ./node_modules:/home/node/app/node_modules
+    ports:
+      - 3000:3000
+
+volumes:
+  mongodb_data_container:
