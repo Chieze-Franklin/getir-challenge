@@ -9,17 +9,17 @@ Codebase for the Getir code challenge.
 - `npm run start:dev` for development
 - `npm start` for production
 
-This starts the API server on [http://localhost:3000]`.
+This starts the API server on [http://localhost:3000](http://localhost:3000).
 
 # Documentation
 
-The production API is located at `https://getir-test-api.herokuapp.com/`.
+The production API is located at [https://getir-test-api.herokuapp.com/](https://getir-test-api.herokuapp.com/).
 
 ![getir](https://user-images.githubusercontent.com/6097630/107561254-9dd7a800-6bde-11eb-9075-b489b1baf761.png)
 
 ### Request
 
-To fetch records, send a `POST` request to `https://getir-test-api.herokuapp.com/`.
+To fetch records, send a `POST` request to [https://getir-test-api.herokuapp.com/](https://getir-test-api.herokuapp.com/).
 
 The body of the `POST` request can contain the following fields:
 
