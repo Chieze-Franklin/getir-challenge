@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index",
     "start:dev": "nodemon src/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "mongoose": "^5.11.15"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.7"
   }
 }

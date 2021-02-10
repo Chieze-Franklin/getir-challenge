@@ -1,7 +1,12 @@
+let dotenv = require('dotenv');
 let express = require('express');
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
-let routes = require("./routes");
+let routes = require('./routes');
+
+if (process.env.NODE_ENV !== 'production') {
+    dotenv.config();
+}
 
 // Connect to Mongoose and set connection variable
 mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true});
